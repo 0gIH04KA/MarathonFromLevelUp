@@ -37,15 +37,14 @@ void main()
 	int sizeArray = sizeof(myArray) / sizeof(myArray[0]);
 
 	int inTab;
-	int outTab;
 
-	for (int i = 0; i < sizeArray; i++)
+	for (int  i = 0; i < sizeArray; i++)
 	{
 		switch (i)
 		{
 			case 0:
 			{
-				inTab = (sizeArray - 1);
+				inTab = ((sizeArray * 2) - 2);
 
 				Print(myArray[i], inTab);
 
@@ -54,53 +53,118 @@ void main()
 
 			case 1:
 			{
-				inTab = (sizeArray - 3);
+				inTab = ((sizeArray * 2) - 4);
 
-				Print(myArray[i], inTab, 1);
+				Print(myArray[i], inTab, i);
 
 				break;
 			}
 
 			case 2:
 			{
-				Print(myArray[i], i, i);
+				inTab = (sizeArray * 2 - 6);
+
+				Print(myArray[i], inTab, i);
 
 				break;
 			}
 
 			case 3:
 			{
-				PrinT(myArray[i], i);
+				inTab = (sizeArray * 2 - 8);
+
+				Print(myArray[i], inTab, i);
 
 				break;
 			}
 
 			case 4:
 			{
-				inTab = outTab = i / 2;
+				inTab = (sizeArray * 2 - 10);
 
-				Print(myArray[i], inTab, outTab);
+				Print(myArray[i], inTab, i);
 
 				break;
 			}
 
 			case 5:
 			{
-				inTab = (sizeArray - 3);
+				inTab = (sizeArray * 2 - 12);
 
-				Print(myArray[i], inTab, 1);
+				Print(myArray[i], inTab, i);
 
 				break;
 			}
 
 			case 6:
 			{
-				inTab = (sizeArray - 1);
+				PrinT(myArray[i], i);
+
+				break;
+			}
+
+		}
+	}
+
+	for (int i = sizeArray; i >= 0; i--)
+	{
+		switch (i)
+		{
+			case 0:
+			{
+				inTab = (sizeArray * 2 - 2);
 
 				Print(myArray[i], inTab);
 
 				break;
 			}
+
+			case 1:
+			{
+				inTab = (sizeArray * 2 - 4);
+
+				Print(myArray[i], inTab, i);
+
+				break;
+			}
+
+			case 2:
+			{
+				inTab = (sizeArray * 2 - 6);
+
+				Print(myArray[i], inTab, i);
+
+				break;
+			}
+
+			case 3:
+			{
+				inTab = (sizeArray * 2 - 8);
+
+				Print(myArray[i], inTab, i);
+
+				break;
+			}
+
+			case 4:
+			{
+				inTab = (sizeArray * 2 - 10);
+
+				Print(myArray[i], inTab, i);
+
+				break;
+			}
+
+			case 5:
+			{
+				inTab = (sizeArray * 2 - 12);
+
+				Print(myArray[i], inTab, i);
+
+				break;
+			}
+
 		}
 	}
+
 }
