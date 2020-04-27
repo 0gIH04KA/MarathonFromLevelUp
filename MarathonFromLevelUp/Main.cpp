@@ -41,50 +41,66 @@ void main()
 
 	for (int i = 0; i < sizeArray; i++)
 	{
-		if (i == 0)
+		switch (i)
 		{
-			inTab = (sizeArray - 1);
+			case 0:
+			{
+				inTab = (sizeArray - 1);
 
-			Print(myArray[i], inTab);
+				Print(myArray[i], inTab);
+
+				break;
+			}
+
+			case 1:
+			{
+				inTab = (sizeArray - 3);
+
+				Print(myArray[i], inTab, 1);
+
+				break;
+			}
+
+			case 2:
+			{
+				Print(myArray[i], i, i);
+
+				break;
+			}
+
+			case 3:
+			{
+				PrinT(myArray[i], i);
+
+				break;
+			}
+
+			case 4:
+			{
+				inTab = outTab = i / 2;
+
+				Print(myArray[i], inTab, outTab);
+
+				break;
+			}
+
+			case 5:
+			{
+				inTab = (sizeArray - 3);
+
+				Print(myArray[i], inTab, 1);
+
+				break;
+			}
+
+			case 6:
+			{
+				inTab = (sizeArray - 1);
+
+				Print(myArray[i], inTab);
+
+				break;
+			}
 		}
-
-		if (i == 1)
-		{
-			inTab = (sizeArray - 3);
-
-			Print(myArray[i], inTab, 1);
-		}
-
-		if (i == 2)
-		{
-			Print(myArray[i], i, i);
-		}
-
-		if (i == 3)
-		{
-			PrinT(myArray[i], i);
-		}
-
-		if (i == 4)
-		{
-			inTab = outTab = i / 2;
-
-			Print(myArray[i], inTab, outTab);
-		}
-
-		if (i == 5)
-		{
-			inTab = (sizeArray - 3);
-
-			Print(myArray[i], inTab, 1);
-		}
-
-		if (i == 6)
-		{
-			inTab = (sizeArray - 1);
-
-			Print(myArray[i], inTab);
-		}
-
 	}
 }
